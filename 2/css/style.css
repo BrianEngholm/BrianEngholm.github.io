@@ -1,0 +1,66 @@
+/*
+    File: /~bengholm/public_html/css/style.css
+    91.461 Assignment: Creating Your First Web Page
+    Brian Engholm, UMass Lowell Computer Science, Brian_Engholm@student.uml.edu
+    Copyright (c) 2020 by Brian Engholm. All rights reserved.
+    updated by Brian Engholm on 2020-07-13 at 21:02 */
+body {
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.15em;
+}
+
+body p {
+    margin: auto;
+    width: 640px;
+    text-align: center;
+    padding: 15px;
+}
+
+#main-header {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#navigation {
+    margin: auto;
+    width: 640px;
+    padding: 15px;
+    border-style: solid none;
+    border-color: black;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+#navigation ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navigation li {
+    display: inline;
+}
+
+#navigation a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    margin: -2em;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a.on {
+    color:red;
+}
