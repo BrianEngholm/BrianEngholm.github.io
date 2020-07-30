@@ -4,11 +4,13 @@
        Copyright (c) 2020 by Brian Engholm. All rights reserved.
        updated by Brian Engholm on 2020-07-29 at 21:50 */
        
+/* Set the table size to be large enough to fill the entire window (when scrolled down) */
 .table {
-    height: calc(100vh - 310px);
+    height: 100vh;
     margin: 0px auto;
 }
 
+/* Add a background to the stickied row/column */
 .table th{
     background-color: #eee;
 }
