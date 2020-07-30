@@ -6,6 +6,7 @@
 
 function genTable() {
 
+    // Get the form values
     var one = document.getElementById('rowstart').value;
     var two = document.getElementById('rowend').value;
     var three = document.getElementById('colstart').value;
@@ -14,11 +15,13 @@ function genTable() {
     var el;
     var error = 0;
 
+    // Clear away any previous warnings
     document.getElementById('rswarn').innerHTML = "";
     document.getElementById('rewarn').innerHTML = "";
     document.getElementById('cswarn').innerHTML = "";
     document.getElementById('cewarn').innerHTML = "";
 
+    // Validate each form value and display an error if necessary
     if (one == "") {
         el = document.getElementById('rswarn');
         el.innerHTML = "<div class='alert alert-danger'><strong>Error!</strong> Please enter a valid number.</div>";
@@ -89,11 +92,11 @@ function genTable() {
 
     var content = "<table class='table table-responsive table-striped table-bordered'><tr><th></th>";
 
+    // Populate the table with values based on the user input
     for (var i = 0; i < numcols; i++) {
         var colnum = three + rowdelta * i;
         content += "<th style='position: sticky; top: 0; z-index: 10'>" + colnum + "</th>";
     }
-
     for (var i = 0; i < numrows; i++) {
         var rownum = one + coldelta * i;
         content += "<tr><th style='position: sticky; left: 0;'>" + rownum + "</th>";
