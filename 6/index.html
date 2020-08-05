@@ -1,0 +1,80 @@
+<!--   File: BrianEngholm.github.io/6/index.html
+       91.461 Assignment: Using the jQuery Validation Plugin with Your Dynamic Table
+       Brian Engholm, UMass Lowell Computer Science, Brian_Engholm@student.uml.edu
+       Copyright (c) 2020 by Brian Engholm. All rights reserved.
+       updated by Brian Engholm on 2020-08-05 at 16:55 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brian's Website.</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brian's Assignment Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb" aria-controls="nb" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="nb">
+            <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../2/">2</a>
+                    <a class="nav-item nav-link" href="../3/">3</a>
+                    <a class="nav-item nav-link" href="../">4</a>
+                    <a class="nav-item nav-link" href="../5/">5</a>
+                    <a class="nav-item nav-link active" href="#">6<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link disabled" href="../7/">7</a>
+                </div>
+        </div>
+    </nav>
+    <main>
+        <center>
+            <br />
+            <form id="tabForm" class="floating-form">
+                <div class="floating-label">
+                    <input name="num" id="rowstart" class="floating-input" type="number" min="-50" max="50" placeholder=" " required />
+                    <span class="highlight"></span>
+                    <label>Row start value</label>
+                    <div id="rswarn"></div>
+                </div>
+
+                <div class="floating-label">
+                    <input name="num" id="rowend" class="floating-input" type="number" min="-50" max="50" placeholder=" " required/>
+                    <span class="highlight"></span>
+                    <label>Row end value</label>
+                    <div id="rewarn"></div>
+                </div>
+
+                <div class="floating-label">
+                    <input name="num" id="colstart" class="floating-input" type="number" min="-50" max="50" placeholder=" " required/>
+                    <span class="highlight"></span>
+                    <label>Col start value</label>
+                    <div id="cswarn"></div>
+                </div>
+
+                <div class="floating-label">
+                    <input name="num" id="colend" class="floating-input" type="number" min="-50" max="50" placeholder=" " required/>
+                    <span class="highlight"></span>
+                    <label>Col end value</label>
+                    <div id="cewarn"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </center>
+        <br />
+        <div id="tab"></div>
+    </main>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/table.js"></script>
+</body>
+
+</html>
