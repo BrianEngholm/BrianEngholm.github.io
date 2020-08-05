@@ -9,11 +9,6 @@ $('#tabForm').validate({
         genTable();
     },
     errorElement: 'div'
-    //,
-    //errorPlacement: function(error, element) {
-    //    error.prepend('<br/>');
-    //    error.insertBefore(element);
-    //}
 });
 
 function genTable() {
