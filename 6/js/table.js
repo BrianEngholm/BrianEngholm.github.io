@@ -4,6 +4,7 @@
        Copyright (c) 2020 by Brian Engholm. All rights reserved.
        updated by Brian Engholm on 2020-08-05 at 16:55 */
 
+//jQuery validation plugin function
 $('#tabForm').validate({
     submitHandler: function() {
         genTable();
