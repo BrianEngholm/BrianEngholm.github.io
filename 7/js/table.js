@@ -31,6 +31,7 @@ $(document).on( "keyup", function( event ) {
 
 // Function to create a new tab with the current table
 function add_table() {
+    if (!$("#tabForm").valid()) return false;
     // Close button copied from https://jqueryui.com/tabs/#manipulation
     var title = '<li><a href="#tabs-'+x+'">'+one+" to "+two+" by "+three+" to "+four+"</a><span class='ui-icon ui-icon-close' role='presentation'>Remove Tab</span></li>"
     console.log("Adding"+title);
