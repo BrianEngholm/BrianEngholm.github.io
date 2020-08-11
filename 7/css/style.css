@@ -7,6 +7,13 @@
 .tabs td{
     color: white;
 }
+
+label {
+  color:red; 
+  font-size:14px;
+  font-weight:normal;
+}
+
 /* Set the table size to be large enough to fill the entire window (when scrolled down) */
 .table {
     height: 100vh;
