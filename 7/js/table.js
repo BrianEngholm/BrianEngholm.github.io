@@ -25,6 +25,7 @@ $(document).on( "keyup", function( event ) {
         $( "#" + panelId ).remove();
         $("#tabs").tabs().tabs( "refresh" );
         }
+        $(".ui-tabs-panel").remove();
     }
 });
 
