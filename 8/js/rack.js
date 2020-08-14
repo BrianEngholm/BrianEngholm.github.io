@@ -1,3 +1,9 @@
+/*     File: BrianEngholm.github.io/8/js/rack.js
+       91.461 Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+       Brian Engholm, UMass Lowell Computer Science, Brian_Engholm@student.uml.edu
+       Copyright (c) 2020 by Brian Engholm. All rights reserved.
+       updated by Brian Engholm on 2020-08-14 at 01:56 */
+
 function refill() {
     $("#score").html("");
     calcScore();

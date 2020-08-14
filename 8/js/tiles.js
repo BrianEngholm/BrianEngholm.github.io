@@ -1,3 +1,9 @@
+/*     File: BrianEngholm.github.io/8/js/tiles.js
+       91.461 Assignment: Implementing a Bit of Scrabble with Drag-and-Drop
+       Brian Engholm, UMass Lowell Computer Science, Brian_Engholm@student.uml.edu
+       Copyright (c) 2020 by Brian Engholm. All rights reserved.
+       updated by Brian Engholm on 2020-08-14 at 01:56 */
+
 var tiles = ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'j', 's', 's', 's', 's', 'b', 'b', 'k', 't', 't', 't', 't', 't', 't', 'c', 'c', 'l', 'l', 'l', 'l', 'u', 'u', 'u', 'u', 'd', 'd', 'd', 'd', 'm', 'm', 'v', 'v', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'n', 'n', 'n', 'n', 'n', 'n', 'w', 'w', 'f', 'f', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'o', 'x', 'g', 'g', 'g', 'p', 'p', 'y', 'y', 'h', 'h', 'q', 'z', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'r', 'r', 'r', 'r', 'r', 'r', 'blank', 'blank'];
 var vals = [];
 vals['a'] = [1, 9];
