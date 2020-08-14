@@ -10,7 +10,7 @@ function refill() {
     }
     $("div.rack").html($("div.rack").html()+txt);
     
-    $(".tile").draggable({
+    $(".rack .tile").draggable({
         snap: $('td span'),
         revert: "invalid",
         helper: 'clone',
