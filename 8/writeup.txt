@@ -1,0 +1,24 @@
+X Letters are taken randomly from remaining tiles
+X Letter tiles can be dragged-and-dropped onto target Scrabble squares
+X Program identifies which tile is dropped onto which square
+X board includes bonus squares
+X score is tallied correctly (TODO: including tiles from previous words)
+X any number of words can be played (currently errors when it runs out of tiles)
+the board is cleared after each round (I'm assuming this doesn't count since I implemented a full board?)
+X after playing a word, the hand refills from remaining tiles
+X score is kept for multiple words (but doesn't calculate using tiles from previous words yet)
+X tiles can only be dragged from the rack to the Scrabble board
+X one the tile is placed on the Scrabble board, it cannot be removed (originally I allowed swapping but removed per the spec)
+X except for the first letter, all sub-sequent letters must be placed directly next to a letter with no space
+X full Scrabble board lines are implemented
+word validation
+
+I started by creating the scrabble board.
+Since I'm lazy, I just used some javascript to do it for me.
+I filled each of the special tiles using some more javascript.
+Next I added the tiles, and a data structure to store the value and remaining quantity of tiles.
+I made the tiles draggable, and made the table droppable.
+I struggled for a while to make the tiles drop nicely into the squares of the board, until I eventually just
+set the contents of the table element to the image, and deleted the original image.
+Since the spec says not to allow for changes of the tiles, I don't have to ever replace a tile once it's been played.
+That makes this implementation work nicely for this situation, but I wouldn't want to use it if I added more functionality.

@@ -1,1 +1,35 @@
-#sortable>img { float: left; }
+td {
+    background: #cec5a8;
+    border: solid 2px white;
+    height: 54px;
+    width: 54px;
+    padding: 0px;
+}
+
+.tile {
+    height: 50px;
+    width: 50px;
+}
+
+.tws {
+    background: #ff6e53;
+}
+
+.dls {
+    background: #c0dad9;
+}
+
+.dws {
+    background: #ffc7ba;
+}
+
+.tls {
+    background: #0193aa;
+}
+
+.mid {
+    background: #ffc7ba;
+    text-align: center;
+    font-size: 30px;
+    cursor: default;
+}

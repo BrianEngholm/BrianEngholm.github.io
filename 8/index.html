@@ -3,48 +3,53 @@
 Credits)
        Brian Engholm, UMass Lowell Computer Science, Brian_Engholm@student.uml.edu
        Copyright (c) 2020 by Brian Engholm. All rights reserved.
-       updated by Brian Engholm on 2020-08-05 at 19:35 -->
-<!DOCTYPE html>
+       updated by Brian Engholm on 2020-08-05 at 19:35 --><!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Brian's Website.</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">Brian's Assignment Hub</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb" aria-controls="nb" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="nb">
-            <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="../2/">2</a>
-                    <a class="nav-item nav-link" href="../3/">3</a>
-                    <a class="nav-item nav-link" href="../">4</a>
-                    <a class="nav-item nav-link" href="../5/">5</a>
-                    <a class="nav-item nav-link" href="../6/">6</a>
-                    <a class="nav-item nav-link" href="../7/">7</a>
-                    <a class="nav-item nav-link active" href="#">8<span class="sr-only">(current)</span></a>
-                </div>
-        </div>
-    </nav>
-    <main>
-        <div class="changeme">
-            
-        </div>
-    </main>
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="js/scrabble.js"></script>
-</body>
-
+    <head> 
+        <title>Brian's Website.</title> 
+        <meta charset="utf-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+        <!-- stylesheets --> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    </head> 
+    <body> 
+        <nav class="navbar navbar-expand-md navbar-light bg-light"> 
+            <a class="navbar-brand" href="#">Brian's Assignment Hub</a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb" aria-controls="nb" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+            <div class="collapse navbar-collapse" id="nb"> 
+                <div class="navbar-nav"> 
+                    <a class="nav-item nav-link" href="../2/">2</a> 
+                    <a class="nav-item nav-link" href="../3/">3</a> 
+                    <a class="nav-item nav-link" href="../">4</a> 
+                    <a class="nav-item nav-link" href="../5/">5</a> 
+                    <a class="nav-item nav-link" href="../6/">6</a> 
+                    <a class="nav-item nav-link" href="../7/">7</a> 
+                    <a class="nav-item nav-link active" href="#">8<span class="sr-only">(current)</span></a> 
+                </div> 
+            </div> 
+        </nav> 
+        <main> 
+            <div id="score">
+            </div>
+       
+            <!-- Board table to be filled by gen_board_html() -->
+            <div>
+                <table id="board"></table>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="refill();">Submit</button>
+                
+            <div class="rack"></div>
+        </main> 
+        <!-- scripts --> 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="js/scrabble.js"></script> 
+        <script src="js/board.js"></script>
+        <script src="js/tiles.js"></script>
+        <script src="js/rack.js"></script>
+    </body>
 </html>
