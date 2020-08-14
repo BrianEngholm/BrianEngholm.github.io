@@ -42,6 +42,7 @@ function refill() {
     col = undefined;
     firstChar = [];
     word = "";
+    newTiles = [];
     //$("#score").text("Word: "+word+" Score: "+score);
 }
 

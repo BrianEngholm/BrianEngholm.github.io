@@ -2,6 +2,7 @@ var row, col;
 firstChar = [];
 var word = "";
 var score = 0;
+var newTiles = [];
 
 function tileHelper(x, y, ch) {
     if (firstChar.length == 0) {
@@ -27,6 +28,7 @@ function tileHelper(x, y, ch) {
     }
     else {
         word += ch;
+        newTiles.push(x+y*15);
     }
 }
 
@@ -76,7 +78,13 @@ function calcScore() {
     }
     
     // Check if the word is valid
-    if (!dict[word]) return;
+    if (!dict[word]) {
+        for (var i = 0; i < newTiles.length; i++) {
+            $("div.rack").html($("div.rack").html()+$('table td:eq('+newTiles[i]+')').html());
+            $('table td:eq('+newTiles[i]+')').html('');
+        }
+        return;
+    }
     
     var multiplier = 1;
     for (i = 0; i < word.length; i++) {
