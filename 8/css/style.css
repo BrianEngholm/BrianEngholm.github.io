@@ -1,10 +1,20 @@
 #score {
+    width: 50%;
+    text-align: center;
+    margin: auto;
     font-size: 30px;
 }
 
 #error {
+    width: 50%;
+    text-align: center;
+    margin: auto;
     font-size: 25px;
     color: red;
+}
+
+table {
+    margin: auto;
 }
 
 td {
