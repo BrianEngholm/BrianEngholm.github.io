@@ -5,7 +5,7 @@
        updated by Brian Engholm on 2020-08-14 at 01:56 */
 
 function refill() {
-    $("#score").html("");
+    $("#error").html("");
     calcScore();
     var txt = "";
     var numTiles = 7 - $('div.rack img').length;
