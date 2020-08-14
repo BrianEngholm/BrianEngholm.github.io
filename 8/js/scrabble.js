@@ -107,7 +107,7 @@ function calcScore() {
     }
     tmp_score *= multiplier;
     score += tmp_score;
-    $("#score").text("Word: "+word+" Score: "+score);
+    $("#score").html("Word: "+word+"<br/>Word score: "+tmp_score+"<br/>Total Score: "+score);
     //$(".score").text(Number($("score").html())+score);
     //document.write(score);
 }
