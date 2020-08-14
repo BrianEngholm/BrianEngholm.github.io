@@ -82,6 +82,7 @@ function calcScore() {
         for (var i = 0; i < newTiles.length; i++) {
             $("div.rack").html($("div.rack").html()+$('table td:eq('+newTiles[i]+')').html());
             $('table td:eq('+newTiles[i]+')').html('');
+            $("#error").html(word+" is not a valid word!");
         }
         return;
     }

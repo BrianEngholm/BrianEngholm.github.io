@@ -1,4 +1,5 @@
 function refill() {
+    $("#score").html("");
     calcScore();
     var txt = "";
     var numTiles = 7 - $('div.rack img').length;
